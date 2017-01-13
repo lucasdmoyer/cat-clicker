@@ -5,11 +5,28 @@
     <title>Cat Clicker</title>
 </head>
 <body>
-	<div id = 'cat'>
+    <ul id="cat-list"></ul>
+    <div id="cat">
+        <h2 id="cat-name"></h2>
+        <div id="cat-count"></div>
+        <img id="cat-img" src="" alt="cute cat">
+    </div>
 
-	</div>
+    <div>
+    	<button id ='admin-button'>Admin Mode</button>
+    </div>
 
-	<script src="js/libs/jquery.min.js"></script>
+    <div>
+    	<form id="admin-form">
+        	Name<input id="nameInput">
+        	ImgUrl<input id ='urlInput'>
+        	#Clicks<input id ='clicksInput'>
+        	<button id="save">Save</button>
+        	<button id='cancel'>Cancel</button>
+    	</form>
+    </div>
+
     <script src="js/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>
